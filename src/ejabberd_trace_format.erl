@@ -55,4 +55,5 @@ xmlelement_to_xmlel(Other) ->
     Other.
 
 to_iolist(Elem) ->
-    exml:to_pretty_iolist(Elem).
+    io_lib:format("~p",[Elem]).
+
